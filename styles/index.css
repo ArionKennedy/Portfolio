@@ -177,7 +177,7 @@ body
 {
     transition: 0s;
     background: #0f0;
-    cursor: alias;
+    cursor: default;
 }
 
 .projects
