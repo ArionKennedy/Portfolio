@@ -179,19 +179,18 @@ body
     cursor: default;
 }
 
-.projects
+.construction
 {
+    display: flex;
     height: 200px;
     width: 100%;
-    margin-top: 10px;
+    align-items: center;
 }  
 
-.projects .projectsTitle
+.construction .constructionText
 {
     display: flex;
     height: 20px;
     width: 100%;
-    align-items: center;
-    justify-content: left;
-
+    justify-content: center;
 }
