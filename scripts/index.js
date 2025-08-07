@@ -38,5 +38,18 @@ function fillHexGrid() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", fillHexGrid);
+function onSidebarClick() {
+    // Your sidebar logic here
+    alert("Sidebar button clicked!");
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    fillHexGrid();
+
+    const sidebarBtn = document.querySelector('.sidepanelButton');
+    if (sidebarBtn) {
+        sidebarBtn.addEventListener('click', onSidebarClick);
+    }
+});
+
 window.addEventListener("resize", fillHexGrid);

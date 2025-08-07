@@ -1,6 +1,6 @@
 body 
 {
-    font-family: sans-serif;
+    font-family: 'Courier New', monospace;
     margin: 0px;
     background-color: white;
 }
@@ -121,7 +121,6 @@ body
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-family: 'Courier New', monospace;
     font-size: 3rem;
     z-index: 2;
     text-align: center;
