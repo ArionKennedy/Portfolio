@@ -7,19 +7,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Arion's Portfolio</title>
         <link rel="stylesheet" href="styles/404.css">
+        <link rel="stylesheet" href="styles/standard.css">
     </head>
     <body>
-        <div class="titleSection">
-            <button class="sidepanelButton">
-                <div class="line lineOne"></div>
-                <div class="line lineTwo"></div>
-                <div class="line lineThree"></div>
+        <div class="sidePanelLinks" id="mySidebar">
+            <div class="sidePanelCloseContainer">
+                <button class="sidePanelButton" onclick="nav_close()">
+                    <ion-icon class="Logo" name="close-outline"></ion-icon>
+                </button>
+            </div>
             </button>
-            <ul class="sidePanelLinks">
-                <li class="sidePanelLink"><a href="#Projects">Projects</a></li>
-                <li class="sidePanelLink"><a href="#Resume">Resume</a></li>
-                <li class="sidePanelLink"><a href="#About">About Me</a></li>
-            </ul>
+            <a href="#Projects" class="sidePanelLink">Projects</a>
+            <a href="#Resume" class="sidePanelLink">Resume</a>
+            <a href="#About" class="sidePanelLink">About Me</a>
+        </div>
+
+        <div class="overlay" onclick="nav_close()" id="myOverlay"></div>
+
+        <div class="titleSection">
+
+            <button class="sidePanelButton" onclick="nav_open()" id="sideBarButton">
+                <div class="line lineOne" id="sideBarLineOne"></div>
+                <div class="line lineTwo" id="sideBarLineTwo"></div>
+                <div class="line lineThree" id="sideBarLineThree"></div>
+            </button>
+
             <div class="socials">
                 <a class = "socialButton" href="https://github.com/ArionKennedy" target="_blank">
                     <ion-icon class = "Logo" name="logo-github"></ion-icon>
@@ -45,5 +57,6 @@
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script src="scripts/404.js"></script>
+        <script src="scripts/standard.js"></script>
     </body>
 </html>
