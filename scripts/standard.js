@@ -13,3 +13,8 @@ function nav_close() {
   document.getElementById("sideBarLineTwo").classList.remove("wide");
   document.getElementById("sideBarLineThree").classList.remove("wide");
 }
+
+function switchTo(pageName){
+  let urlNew = pageName + '.html';
+  window.location.replace(urlNew);
+}
