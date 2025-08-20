@@ -19,7 +19,7 @@
     z-index: 2;
     text-align: center;
     width: 100%;
-    pointer-events: none; /* allows clicks to pass through to hexagons if needed */
+    pointer-events: none;
 }
 
 .construction
