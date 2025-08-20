@@ -24,16 +24,20 @@
 
 .construction
 {
-    display: flex;
     height: 200px;
     width: 100%;
     align-items: center;
+    justify-content: center;
+    padding-top: 20px;
 }  
 
 .construction .constructionText
 {
     display: flex;
-    height: 20px;
-    width: 100%;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    margin: auto;
 }
