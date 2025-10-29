@@ -1,2 +1,2 @@
-RewriteBase /portfolio/
-ErrorDocument 404 /portfolio/404.html
+RewriteBase /Portfolio/
+ErrorDocument 404 /Portfolio/404.html
