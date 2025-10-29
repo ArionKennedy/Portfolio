@@ -40,7 +40,7 @@ body
     min-width: fit-content;
     transition: left 0.4s ease;
     background-color: #333333;
-    border: 2px solid black;
+    border: 1px solid black;
     z-index: 5;
 }
 

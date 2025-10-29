@@ -18,3 +18,11 @@ function switchTo(pageName){
   let urlNew = pageName + '.html';
   window.location.replace(urlNew);
 }
+
+function goRightProjects() {
+  this.document.querySelector(".carousel-inner-projects").scrollLeft += 250;
+}
+
+function goLeftProjects() {
+  this.document.querySelector(".carousel-inner-projects").scrollLeft -= 250;
+}
