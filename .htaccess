@@ -1,20 +1,2 @@
-ErrorDocument 404 /404.html
-
-RewriteEngine On
-
-# 0) Never rewrite the 404 page itself (prevents loops)
-RewriteRule ^404\.html$ - [L]
-
-# 1) If the request is a real file or directory, serve it as-is (protects /css, /js, images, etc.)
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
-
-# 2) Optional: canonicalise trailing slashes
-# Remove trailing slash from non-directories
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+?)/$ /$1 [R=301,L]
-
-# Optional: add trailing slash to real directories (tidy URLs)
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^(.+[^/])$ /$1/ [R=301,L]
+RewriteBase /portfolio/
+ErrorDocument 404 /portfolio/404.html
