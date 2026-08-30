@@ -24,7 +24,7 @@
 
 .construction
 {
-    height: 200px;
+    height: fit-content;
     width: 90%;
     margin-left: 5%;
     align-items: center;
@@ -43,4 +43,39 @@
     justify-content: center;
     text-align: center;
     margin: auto;
+}
+
+.projectCard
+{
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    gap: 10px;
+}
+
+.projectText
+{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.projectVideo
+{
+    display: flex;
+    height: 40%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.3);
 }
