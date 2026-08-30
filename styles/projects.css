@@ -78,4 +78,6 @@
     text-align: center;
     margin: auto;
     box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10;
 }
